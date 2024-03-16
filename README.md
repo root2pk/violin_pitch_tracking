@@ -12,7 +12,7 @@ Further details are provided in the following paper:
 > Proceedings of the International Society for Music Information Retrieval Conference (ISMIR), 2022
  
 ## Contents
-This repository contains the notebook `pitch_extraction.ipynb` which is used to compute activation matrices for each track in `audio_multitrack`.
+This repository contains the notebook `pitch_extraction.ipynb` which is used to compute activation matrices for each track in `\audio_multitrack`.
 
 The activation matrices can then be utilised to compute pitch and confidence tracks using three Viterbi algorithms
 
@@ -22,4 +22,6 @@ The activation matrices can then be utilised to compute pitch and confidence tra
 
 There is an option of applying a voicing threshold based on confidence values to the computed pitch tracks.
 
-The obtained pitch tracks can be plotted and sonified to compare against the `pitch-vocal` annotations for the corresponding tracks from Saraga.
+Sections of the obtained pitch tracks can be plotted and sonified to compare against the vocal pitch annotations for the corresponding tracks from Saraga (`\vocal_pitch_annotations`). Plots for two example tracks are saved in `\plots`.
+
+`utils.py` contains the utility functions to accompany the main notebook. `core.py` is a modeified version of the script from the original CREPE repository.
